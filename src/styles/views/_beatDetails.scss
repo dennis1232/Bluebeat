@@ -1,0 +1,16 @@
+.details-cmp {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.main-details {
+    width: 70%;
+    margin-top: 80px;
+}
+
+@include for-normal-layout {
+    .details-cmp {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,100 @@
+.beat-playerlist-cmp {
+    width: 100%;
+    overflow-y: auto;
+    height: 40vh;
+    border-radius: 8px;
+}
+::-webkit-scrollbar {
+    background-color: $font3;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $logo;
+    box-shadow: inset 0 0 6px $bgc2;
+    border-radius: 5px;
+}
+
+.song-container {
+    height: 50px;
+    background-color: $bgc2;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    .song-title {
+        flex: 1;
+        padding: 0 10px;
+        font-size: rem(12px);
+        text-overflow: ellipsis; 
+    }
+}
+
+.song-container:hover {
+    background-color: $bgc3;
+}
+
+.song-img {
+    height: 60%;
+    padding: 0 4px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.song-icon {
+    font-size: rem(13px);
+    padding: 0 10px;
+    &:hover{
+        color: $logo;
+        font-size: rem(15px);
+    }
+}
+
+.active {
+    color: $logo;
+    .song-icon {
+        color: $font1;
+        &.is-add {
+            color: $logo;
+        }
+    }
+}
+
+.main-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minMax(160px, 1fr));
+    gap: 20px;
+    padding-bottom: 20px;
+    h5:hover {
+        color: $logo;
+    }
+}
+
+.song-dur {
+    padding-left: 4px;
+}
+.clean-search {
+    cursor: pointer;
+    margin-right: 70px;
+    &:hover {
+        color: $logo;
+    }
+}
+
+@include for-normal-layout {
+    .main-details {
+        width: 100%;
+    }
+    // .beat-playerlist-cmp{
+    //     overflow-y: unset;
+    // }
+    .beat-playlist-container {
+        flex-direction: column-reverse;
+    }
+    .beat-add.add-container {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .beat-playerlist-cmp {
+        // height: fit-content;
+        margin-bottom: 10px;
+    }
+}

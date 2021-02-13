@@ -1,0 +1,51 @@
+// .ratio-16-9 { @include aspect-ratio(100, 56); }
+
+// .ratio-square { @include aspect-ratio(100, 100); }
+
+// .ratio-card { @include aspect-ratio(100, 80); }
+
+// .ratio-poster { @include aspect-ratio(100, 150); }
+
+.icon {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    &.justify-center {
+        justify-content: center;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.col {
+        flex-direction: column;
+    }
+    &.space-between {
+        justify-content: space-between;
+    }
+    &.space-around{
+        justify-content: space-around;
+    }
+    &.space-evenly {
+        justify-content: space-evenly;
+    }
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    &.align-baseline{
+        align-items: baseline;
+    }
+    &.justify-baseline{
+        justify-content: flex-end;
+    }
+}
+.ml20{
+    margin-left: 20px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mr{
+    margin-right: 20px;
+}

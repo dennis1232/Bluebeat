@@ -1,0 +1,23 @@
+@mixin for-mobile-layout {
+    @media (max-width: $break-mobile) {
+      @content;
+    }
+  }
+  
+  @mixin for-normal-layout {
+    @media (max-width: $break-normal) {
+      @content;
+    }
+  }
+
+  @mixin for-tablet-layout {
+    @media (max-width: $break-tablet) {
+      @content;
+    }
+  }
+  
+  @mixin for-wide-layout {
+    @media (max-width: $break-wide) {
+      @content;
+    }
+  }

@@ -1,0 +1,112 @@
+.beat-info {
+    background-color: $bgc2;
+    margin-bottom: 10px;
+    padding: 10px;
+     border-radius: 8px;
+}
+
+.beat-info-imgs {
+    width: 20%;
+    img{
+        object-fit: cover;
+    }
+    .profile-img {
+        width: 1.5rem;
+        height: 1.5rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .prev-img-details {
+        width: 80px;
+        height: 80px;
+        border-radius: 10%;
+        margin-right: 10px;
+    }
+    span {
+        font-size: rem(13px);
+    }
+}
+
+.beat-title {
+    font-family: ambitBold;
+    font-size: rem(27px);
+}
+.beat-genre {
+    font-family: ambitBold;
+    font-size: rem(15px);
+    opacity: 0.7;
+}
+.beat-description {
+    font-size: rem(13px);
+    opacity: 0.7;
+}
+
+.views-container {
+    width: 10%;
+    & > * {
+        width: 100%;
+    }
+}
+
+.like-btn {
+    color: $logo;
+}
+
+
+
+@include for-normal-layout{
+    .beat-info {
+        height: 100px;
+    }
+    .beat-description{
+        display: none;
+    }
+    .views-container{
+        i{
+            font-size: rem(15px);
+        }
+        .beat-likes{
+            font-size: rem(14px);
+           margin-right: 5px;
+
+        }
+        span{
+            font-size: rem(10px);
+            font-family: ambitBold;
+        }
+        a .copy-clipboard{
+            padding-right: 10px;
+        }
+    }
+  
+    .beat-info-imgs {
+        .prev-img-details {
+            width: 60px;
+            // height: 60px;
+        }
+        .user-profile{
+            span{
+                display: none;
+            }
+        }
+    }
+}
+
+@include for-mobile-layout{
+  
+    .prev-img-details{
+        display: none;
+    }
+    .song-info{
+        width: auto;
+    }
+    .user-profile{
+        display: inline-block;
+    }
+  
+}
+
+.copy-clipboard {
+    font-size: rem(18px);
+    color: $logo;
+}

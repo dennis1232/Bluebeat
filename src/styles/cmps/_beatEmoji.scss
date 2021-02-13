@@ -1,0 +1,36 @@
+.emoji-container {
+    position: absolute;
+    bottom: 45px;
+    right: 0;
+    background-color: $bgc1;
+    text-align: center;
+    & > * {
+        color: $logo;
+        font-size: rem(24px);
+        padding: 7px;
+        cursor: pointer;
+    }
+}
+
+.sent-emojis-container {
+    position: absolute;
+    bottom: 0;
+}
+
+.emoji {
+    bottom: 0;
+    right: 20px;
+    font-size: rem(50px);
+    overflow: hidden;
+    transition: all 8s ease;
+    color: $logo;
+    position: absolute;
+    &.start {
+        bottom: 100vh;
+    }
+}
+
+.beat-chat li {
+    margin: 0;
+    padding: 2px 7px;
+}

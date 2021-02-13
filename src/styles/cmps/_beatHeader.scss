@@ -1,0 +1,105 @@
+.header {
+    position: absolute;
+    // top: 0px;
+    display: grid;
+    width: 100%;
+    z-index: 5;
+    padding: 0 50px;
+}
+.beat-logo {
+    height: 70px;
+}
+.header-btn {
+    font-size: rem(20px);
+    text-decoration: none;
+    color: $font1;
+    margin-right: 10px;
+    text-shadow: 0 0px 10px $logo;
+    &:hover {
+        color: $logo;
+    }
+}
+.header-search {
+    max-width: rem(250px);
+}
+
+.el-input__inner {
+    background-color: transparent;
+    color: $logo;
+    border: none;
+    border-bottom: 1px solid $logo;
+    &::placeholder {
+        color: $logo;
+    }
+}
+
+.user-profile-btn {
+    font-size: rem(30px);
+    padding: 0 10px;
+    color: $logo;
+}
+
+.userNav {
+    right: 15px;
+    background-color: $bgc2;
+    font-size: rem(20px);
+    margin: 0%;
+    width: rem(112px);
+    text-align: center;
+    // display: none;
+    transform: translateY(-200px);
+    position: absolute;
+    transition: 1.5s;
+    visibility: hidden
+}
+
+.menuOpen {
+    transition: 1.2s;
+    position: absolute;
+    right: 15px;
+    transform: translateY(50px);
+    background-color: $bgc2;
+    font-size: rem(20px);
+    margin: 0%;
+    width: rem(112px);
+    text-align: center;
+}
+
+.login-link {
+    padding: 6px 10px 6px 10px;
+    border: 1px solid $logo;
+}
+.divider {
+    margin: 0 10px;
+}
+
+@include for-normal-layout{
+    .header{
+        padding: 0 20px;
+    }
+    .header-search {
+        max-width: rem(100px);
+        ::placeholder{
+            font-size: 0;
+        }
+    }
+    .header-btn {
+    font-size: rem(15px);
+    }
+
+}
+@include for-mobile-layout{
+    .header{
+        padding: 0 10px;
+    }
+    .header-search {
+        max-width: rem(70px);
+        ::placeholder{
+            font-size: 0;
+        }
+    }
+    .header-btn {
+    font-size: rem(13px);
+    }
+
+}

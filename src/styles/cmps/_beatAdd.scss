@@ -1,0 +1,132 @@
+.beat-add {
+
+    margin-left: 10px;
+    // max-width: 50%;
+    input {
+        margin-bottom: 20px;
+    }
+}
+.beat-add-container {
+    background-color: $bgc2;
+    padding: 20px;
+    margin-top: 80px;
+    // max-width: 50%;
+}
+
+.img-uploaded {
+    height: rem(104px);
+    width: rem(104px);
+}
+
+.add-search {
+    background-color: $bgc2;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.add-input {
+    width: 70%;
+    margin-bottom: 20px;
+}
+.add-btns {
+    padding: 15px;
+}
+.genre-select {
+    padding-bottom: 10px;
+}
+
+.add-song-btn {
+    padding-right: 10px;
+}
+
+.upload-img {
+    height: 100%;
+    width: 30%;
+}
+
+.upload-info {
+    height: 100%;
+    width: 70%;
+}
+
+.el-input__inner {
+    text-align: center;
+}
+
+.el-textarea__inner {
+    display: block;
+    padding: 5px 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    width: 80%;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    background-color: $bgc2;
+    color: $logo;
+    border-color: $logo;
+    height: 25vw;
+    margin: auto;
+    &::placeholder {
+        color: $logo;
+    }
+}
+
+.btns-add {
+    margin-bottom: 150px;
+}
+
+.el-select-dropdown__list {
+    text-align: center;
+    list-style: none;
+    padding: 4px 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $bgc1;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+    background-color: $bgc2;
+}
+
+.el-select-dropdown__item {
+    color: $font3;
+}
+
+.img-icon {
+    color: $logo;
+    font-size: rem(100px);
+    border: 1px solid $logo;
+    padding: 2px;
+    color: #5ffbf1;
+    font-size: 6.25rem;
+    border: 1px solid #5ffbf1;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.searchKeyword {
+    width: 45%;
+}
+
+.add-song-cmp {
+    width: 30vw;
+    margin-left: 10px;
+}
+
+.search-new-songs {
+    padding: 5px 0;
+    width: 80%;
+    margin: auto auto 10px;
+}
+
+.add-song-container {
+    border-right: 1px solid $logo;
+    border-left: 1px solid $logo;
+    &:hover {
+        border-right: 4px solid $logo;
+        border-left: 4px solid $logo;
+    }
+}

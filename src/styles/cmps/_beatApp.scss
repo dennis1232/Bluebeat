@@ -1,0 +1,76 @@
+.beat-filter {
+  margin-top: 60px;
+  padding: 20px 0;
+}
+.filter-btn {
+  padding: 8px;
+  border: 1px solid $logo;
+  border-radius: 10px;
+  min-width: 70px;
+  text-align: center;
+  color: $logo;
+  .el-radio__inner {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  .el-radio__label {
+    padding: 0;
+  }
+}
+.br-filter {
+  display: none;
+}
+
+.filter-btn:hover {
+ background-color: $bgc2;
+}
+
+
+@include for-tablet-layout{
+  .filter-btn {
+    min-width: 0;
+    padding: 5px;
+  }
+  .el-radio {
+    margin-right: 15px;
+  }
+  
+}
+
+@include for-normal-layout{
+  .beat-filter {
+    padding: 14px 0 10px;
+       .el-radio{
+        margin-right: 7px;
+        margin-bottom: 10px;
+        padding: 3px;
+      }
+       
+  }
+  .el-radio__label {
+    font-size: em(13px);
+  }
+  .filter-btn {
+    padding:10px;
+    margin: 0;
+    min-width: 85px;
+  }
+  .br-filter {
+    display: block;
+  }
+}
+
+@include for-mobile-layout{
+  
+  .el-radio__label {
+    font-size: em(11px);
+  }
+  .el-radio{
+    margin-right: 5px;
+  }
+  .filter-btn {
+    min-width: 70px;
+  }
+  
+}

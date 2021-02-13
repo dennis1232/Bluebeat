@@ -1,0 +1,95 @@
+.send-container {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.beat-chat {
+    border: 2px solid $bgc2;
+    border-radius: 8px;
+    margin-top: 78px;
+    background-color: $bgc2;
+    width: 30%;
+    margin-left: 10px;
+    .beat-msg > * {
+        background-color: $logo;
+        border-radius: 2px 7px 7px 7px;
+        width: fit-content;
+        border: 1px solid $font1;
+        max-width: 80%;
+        word-break: break-word;
+    }
+    .from {
+        font-size: rem(16px);
+        color: $bgc1;
+        font-family: ambitBold;
+    }
+    .msg {
+        background-color: $logo;
+        border-radius: 20px;
+        color: $bgc2;
+        font-size: rem(16px);
+    }
+}
+
+.send-msg {
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+}
+
+.send-btn {
+    color: $logo;
+    font-size: rem(25px);
+}
+
+.typing {
+    color: $bgc1;
+}
+
+.chat-form {
+    width: 70%;
+    & > * {
+        width: 100%;
+        border: 2px solid $logo;
+    }
+}
+
+.chat-toggle {
+    display: none;
+}
+
+.msg-li{
+    margin: 10px !important;
+    padding: 0 10px !important;
+    color: $bgc1;
+}
+
+@include for-normal-layout {
+    .beat-chat {
+        display: none;
+        position: fixed;
+        width: 70%;
+        height: 70vh;
+        left: 15%;
+        margin-left: 0;
+        &.active {
+            display: block;
+        }
+    }
+    .chat-toggle {
+        display: block;
+        position: fixed;
+        padding: 10px;
+        background-color: $logo;
+        color: $bgc1;
+        right: 10px;
+        bottom: 130px;
+        font-size: rem(20px);
+        border-radius: 50%;
+    }
+    .send-container {
+        position: absolute;
+        bottom: 0;
+    }
+}

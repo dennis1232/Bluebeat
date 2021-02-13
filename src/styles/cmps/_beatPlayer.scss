@@ -1,0 +1,165 @@
+.beat-player {
+    margin: 20px 0;
+    max-height: 70px;
+    background-color: $bgc2;
+    
+    justify-content: center;
+    .back-to-beat-img{
+        display: none;
+    }
+    .prev-img {
+        width: 7.3rem;
+        height: 7.3rem;
+    }
+ 
+    background-image: linear-gradient(to bottom, $logo, #46a7a0, #3d7e77, #325852, #243431);
+    h2 {
+        font-family: ambitBold;
+        color: $logo;
+        font-size: rem(15px);
+        text-align: center;
+       width: 250px;
+        margin-right: 40px;
+        align-self: center;
+        span{
+            color:$font3;
+        }
+    }
+    .beat-img {
+        padding: 10px;
+    }
+}
+
+
+.player-btn {
+    padding: 0px 20px;
+    border-radius: 10px;
+    span{
+        width: 33px;
+    }
+}
+.player-btn > * {
+    margin: 10px;
+    font-size: rem(20px);
+    &:hover {
+        color: $logo;
+    }
+}
+.song-desc {
+    padding: 15px;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.sound {
+    margin-left: 15px;
+    padding: 8px;
+    font-size: rem(20px);
+}
+
+.soundOn {
+    color: $logo;
+}
+
+.marquee-text-text{
+    bottom: 0;
+    span{
+        text-align: center;
+    }
+}
+
+
+.set-vol {
+    width: 60px;
+    height: 5px;
+}
+input[type=range]{
+    -webkit-appearance: none;
+    background:$font1;
+    &:focus{
+        outline: none;
+    }
+    &::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        border: 1px solid $bgc1;
+        height: 20px;
+        width: 10px;
+        border-radius: 5px;
+        background: $logo;
+        cursor: grab;
+        box-shadow: 1px 1px 1px $bgc1, 0px 0px 1px $bgc2;
+    }
+}
+
+.home~.beat-player{
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    .back-to-beat-img{
+        width: 90px;
+        display: block;
+    }
+    .close-player-btn {
+        display: block;
+    }
+  
+}
+.player {
+    width: 0;
+    height: 0;
+}
+
+
+
+.close-player-btn {
+    font-size: rem(20px);
+    color: $bgc2;
+    padding: 5px;
+    display: none;
+    margin-right: 20px;
+}
+
+.currsong-duration {
+    color: $bgc2;
+}
+
+@include for-tablet-layout{
+    .beat-player{
+        margin: 0;
+        .prev-img{
+            display: none
+        }
+        .beat-img{
+            display: none;
+        }
+        h4{
+            display: none;
+        }
+        max-height: none;
+      
+    }
+    .player-btn{
+        // flex-direction: column;
+      i{
+          font-size: rem(25px);
+      }
+      h2{
+          margin: 10px;
+          width: 150px;
+      }
+       
+        .sound{
+            display: none;
+        }
+   
+    }
+            .home~.back-to-beat-img{
+                width: 50px;
+            }
+}
+.now-playing {
+    width: 100%;
+    max-width: 100%;
+}
